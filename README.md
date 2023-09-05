@@ -23,6 +23,8 @@
 ## get-road
 在获取到`read-map`的输入后，进行路径规划。这一步没有输出，需要自行补充输出代码。结果会储存在`travel-path`当中。
 
+输入的最后必须另起一行加上`-1 -1 -1 -1`并回车才会开始计算。
+
 # 方案
 ## 关键思路
 ![image](https://github.com/fjybiocs/guangdiandasai/blob/main/read-map/image.png?raw=true)
