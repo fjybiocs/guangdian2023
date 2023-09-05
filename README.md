@@ -7,6 +7,16 @@
 
 因为做的时候才四月份，对赛题的具体明细还不太清楚，所以并没有区分敌我宝藏。
 
+另外宝藏的坐标识别当时也没做，这个应该很好完成，目前宝藏位置是写死在cpp里的：
+```cpp
+    maze.treasures[0] = maze.enterPoint;
+    maze.treasures[MAX_NUM_OF_TREASURE+1] = maze.exitPoint;
+    maze.treasures[1] = make_pair(1, 1);
+    maze.treasures[2] = make_pair(7, 2);
+    maze.treasures[3] = make_pair(1, 4);
+    maze.treasures[4] = make_pair(8, 5);
+```
+
 # 文件说明
 ## read-map
 读取map图像的python-opencv实现，会将迷宫进行编码并输出一堆东西（迷宫中所有墙壁的离散化坐标），这堆东西作为`get-road`的输入。
